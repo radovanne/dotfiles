@@ -5,7 +5,6 @@ sudo pacman -Syu
 
 sudo pacman -S --needed --noconfirm git base-devel libfido2 unzip
 
-
 # Check if rustup is installed
 if ! command -v rustup &>/dev/null; then
     echo "Rustup not found. Installing Rustup..."
@@ -36,6 +35,10 @@ sudo pacman -S discord chromium pipewire wireplumber tar github-cli alacritty br
 sudo pacman -S ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono
 
 paru -S brave-bin slack-desktop zulip-desktop apvlv
+
+echo "Installing sdkman"
+curl -s "https://get.sdkman.io" | bash
+source "/home/ned/.sdkman/bin/sdkman-init.sh"
 
 echo "Installing Clojure"
 paru -S jdk21-temurin
