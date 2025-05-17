@@ -9,8 +9,9 @@ sudo pacman -S --needed --noconfirm git base-devel libfido2 unzip
 if ! command -v rustup &>/dev/null; then
     echo "Rustup not found. Installing Rustup..."
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    echo "Source ~/.bashrc"
-    source ~/.bashrc
+    echo "Source ~/.zshrc"
+    zsh
+    source ~/.zshrc
     rustup update
 else
     echo "Rustup is already installed. Skipping installation."
@@ -36,9 +37,9 @@ sudo pacman -S ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-f
 
 paru -S brave-bin slack-desktop zulip-desktop apvlv
 
-echo "Installing sdkman"
-curl -s "https://get.sdkman.io" | bash
-source "/home/ned/.sdkman/bin/sdkman-init.sh"
+# echo "Installing sdkman"
+# curl -s "https://get.sdkman.io" | bash
+# source "/home/ned/.sdkman/bin/sdkman-init.sh"
 
 echo "Installing Clojure"
 paru -S jdk21-temurin
