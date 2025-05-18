@@ -32,3 +32,6 @@ paru -S wlogout
 
 echo "Install Grimblast"
 paru -S grimblast
+
+echo "Install Dolphin"
+paru -S dolphin

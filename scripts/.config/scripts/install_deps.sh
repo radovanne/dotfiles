@@ -5,9 +5,9 @@ sudo pacman -Syu
 
 sudo pacman -S --needed --noconfirm git base-devel libfido2 unzip
 
-# Install Tar, Github Cli, Alacritty, Brigthnessctl
+# Install FastFetch, Gimp, Tldr Tar, Github Cli, Alacritty, Brigthnessctl
 # Pamixer, Tmux, Fzf, Tree
-sudo pacman -S tar github-cli alacritty brightnessctl pamixer tmux fzf tree --noconfirm
+sudo pacman -S xdg-desktop-portal fastfetch gimp tldr tar github-cli alacritty brightnessctl pamixer tmux fzf tree --noconfirm
 
 echo "Installing dependencies for Neovim"
 # Install neovim plugins
